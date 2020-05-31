@@ -11,7 +11,7 @@
 </head>
 <body>
 <!--  form is a container HTML tag  -->
-<form name="calculator-form" accept-charset="utf-8">
+<form name="calculator" accept-charset="utf-8">
 
 	<table class="table">
 		<tbody>
@@ -20,8 +20,7 @@
 				</td> <!-- TEXT BOX digits and operators to be seen in the display -->
 			</tr>
 			<tr>
-				<td colspan="2"><input id="clear" type="button" name="clear01" value="C" 
-					onclick="clear()" onfocus="clear(display)" ></td> <!-- BUTTON -->
+				<td colspan="2"><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value='';"></td> <!-- BUTTON -->
 				<td colspan="1"><input type="button" name="equal01" value="="
 					onclick="display.value = eval(display.value)"></td> <!-- eval(String)  string operators and operands 23 * 3--> 
 			</tr>
