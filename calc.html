@@ -1,0 +1,85 @@
+
+
+<!-- //basic calculator     -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<!--  form is a container HTML tag  -->
+<form name="calculator-form" accept-charset="utf-8">
+
+	<table class="table">
+		<tbody>
+			<tr>
+				<td colspan="3"><input id ="enter" type="text" name="display" id="display" disabled="true">
+				</td> <!-- TEXT BOX digits and operators to be seen in the display -->
+			</tr>
+			<tr>
+				<td colspan="2"><input id="clear" type="button" name="clear01" value="C" 
+					onclick="clear()" onfocus="clear(display)" ></td> <!-- BUTTON -->
+				<td colspan="1"><input type="button" name="equal01" value="="
+					onclick="display.value = eval(display.value)"></td> <!-- eval(String)  string operators and operands 23 * 3--> 
+			</tr>
+			<tr>
+				<td colspan="1"><input type="button" name="one01" value="1"
+					onclick="display.value += '1'"></td>
+				<td colspan="1"><input type="button" name="two01" value="2"
+					onclick="display.value += '2'"></td>
+				<td colspan="1"><input type="button" name="three01" value="3"
+					onclick="display.value += '3'"></td>
+			</tr>
+			<tr>
+				<td colspan="1"><input type="button" name="four01" value="4"
+					onclick="display.value += '4'"></td>
+				<td colspan="1"><input type="button" name="five01" value="5"
+					onclick="display.value += '5'"></td>
+				<td colspan="1"><input type="button" name="six01" value="6"
+					onclick="display.value += '6'"></td>
+			</tr>
+			<tr>
+				<td colspan="1"><input type="button" name="seven01" value="7"
+					onclick="display.value += '7'"></td>
+				<td colspan="1"><input type="button" name="eight01" value="8"
+					onclick="display.value += '8'"></td>
+				<td colspan="1"><input type="button" name="nine01" value="9"
+					onclick="display.value += '9'"></td>
+			</tr>
+			<tr>
+				<td colspan="1"><input type="button" name="zero01" value="0"
+					onclick="display.value += '0'"></td>
+				<td colspan="1"><input type="button" name="operator01" value="+"
+					onclick="display.value += '+'"></td>
+				<td colspan="1"><input type="button" name="operator02" value="-"
+					onclick="display.value += '-'"></td>
+			</tr>
+			<tr>
+				<td colspan="1"><input type="button" name="operator03" value="*"
+					onclick="display.value += '*'"></td>
+				<td colspan="1"><input type="button" name="operator04" value="/"
+					onclick="display.value += '/'"></td>
+				<td colspan="1"><input type="button" name="operator05" value="%"
+					onclick="display.value += '%'"></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</form>
+<script type="text/javascript">
+	
+		function clear() {
+			clear=document.getElementById("clear");
+			clear.innerHTML=""
+			ele.value ='';
+			//document.getElementById("display").value = '';
+			//display.value = '';
+		}
+	</script>
+
+</body>
+</html>
